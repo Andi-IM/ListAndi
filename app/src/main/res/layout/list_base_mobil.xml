@@ -1,18 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp">
 
     <ImageView
-        android:id="@+id/imgMobil"
+        android:id="@+id/iconMobil"
         android:layout_width="150dp"
         android:layout_height="200dp"
-        android:src="@drawable/windows"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/windows" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/lbHarga"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="hello" />
+        android:layout_toStartOf="@id/iconMobil"
+        android:text="Rp. 280.000.000,-"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lbNamaMobil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbHarga"
+        android:layout_toStartOf="@id/iconMobil"
+        android:text="Honda CR-V 2.0 SUV"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lbTahunMobil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbNamaMobil"
+        android:layout_toStartOf="@id/iconMobil"
+        android:text="2017" />
+
+    <TextView
+        android:id="@+id/lbBahanBakar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbTahunMobil"
+        android:layout_toStartOf="@id/iconMobil"
+        android:text="Bahan bakar : Gas" />
+
+    <TextView
+        android:id="@+id/lbLokasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbBahanBakar"
+        android:layout_toStartOf="@id/iconMobil"
+        android:text="DKI JAKARTA, JAKARTA" />
 
 </RelativeLayout>
